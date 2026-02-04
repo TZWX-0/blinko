@@ -16,6 +16,7 @@ import { NoteType } from '@shared/lib/types';
 import { Icon } from '@/components/Common/Iconify/icons';
 import { DndContext, closestCenter, DragOverlay } from '@dnd-kit/core';
 import { useDragCard, DraggableBlinkoCard } from '@/hooks/useDragCard';
+import { BlinkoBacklinkSidebar } from '@/components/BlinkoBacklinkSidebar';
 
 interface TodoGroup {
   displayDate: string;
@@ -125,11 +126,12 @@ const Home = observer(() => {
   }, [location.key]);
 
   return (
-    <div
-      style={{
-        maxWidth: blinko.config.value?.maxHomePageWidth ? `${blinko.config.value?.maxHomePageWidth}px` : '100%'
-      }}
-      className={`pt-1 md:p-0 relative h-full flex flex-col-reverse md:flex-col mx-auto w-full`}>
+    <div className="flex h-full w-full gap-4">
+      <div
+        style={{
+          maxWidth: blinko.config.value?.maxHomePageWidth ? `${blinko.config.value?.maxHomePageWidth}px` : '100%'
+        }}
+        className={`pt-1 md:p-0 relative h-full flex flex-col-reverse md:flex-col mx-auto w-full flex-1`}>
 
       {store.showEditor && isPc && !blinko.config.value?.hidePcEditor && <div className='px-2 md:px-6' >
         <BlinkoEditor mode='create' key='create-key' onHeightChange={height => {
@@ -230,6 +232,8 @@ const Home = observer(() => {
           {store.showLoadAll && <div className='select-none w-full text-center text-sm font-bold text-ignore my-4'>{t('all-notes-have-been-loaded', { items: currentListState.value?.length })}</div>}
         </ScrollArea>
       }
+      </div>
+      <BlinkoBacklinkSidebar notes={currentListState.value || []} />
     </div>
   );
 });
