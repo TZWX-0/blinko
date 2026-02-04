@@ -854,5 +854,17 @@
   "enable-signin-footer": "启用登录页脚",
   "signin-footer-text": "登录页脚内容",
   "signin-footer-desc": "支持HTML: <a href='...'>链接</a>, <strong>粗体</strong>, <em>斜体</em>, <br/>",
-  "signin-footer-placeholder": "例如：<a href='https://blinko.space/'>Blinko</a> © 2026 Blinko. 保留所有权利."
+  "signin-footer-placeholder": "例如：<a href='https://blinko.space/'>Blinko</a> © 2026 Blinko. 保留所有权利.",
+  "backlink-sidebar-title": "双链关系",
+  "backlink-selected": "已选笔记的递归关系",
+  "backlink-all": "当前视图内所有笔记",
+  "backlink-node-count": "{{count}} 个节点",
+  "backlink-edge-count": "{{count}} 条链接",
+  "backlink-loading": "正在加载双链关系...",
+  "backlink-empty": "暂无关联笔记",
+  "backlink-outgoing": "出链",
+  "backlink-incoming": "入链",
+  "backlink-related": "递归关联",
+  "backlink-node-stats": "入链 {{inbound}} · 出链 {{outbound}} · 深度 {{depth}}",
+  "backlink-untitled": "未命名"
 }

@@ -837,5 +837,17 @@
   "enable-signin-footer": "Enable Signin Footer",
   "signin-footer-text": "Signin Footer Content",
   "signin-footer-desc": "Supports HTML: <a href='...'>link</a>, <strong>bold</strong>, <em>italic</em>, <br/>",
-  "signin-footer-placeholder": "e.g., <a href='https://blinko.space/'>Blinko</a> © 2026 Blinko. All rights reserved."
+  "signin-footer-placeholder": "e.g., <a href='https://blinko.space/'>Blinko</a> © 2026 Blinko. All rights reserved.",
+  "backlink-sidebar-title": "Linked Notes",
+  "backlink-selected": "Recursive links for the selected note",
+  "backlink-all": "All visible notes in this view",
+  "backlink-node-count": "{{count}} nodes",
+  "backlink-edge-count": "{{count}} links",
+  "backlink-loading": "Loading linked notes...",
+  "backlink-empty": "No linked notes yet",
+  "backlink-outgoing": "Outgoing links",
+  "backlink-incoming": "Backlinks",
+  "backlink-related": "Related graph",
+  "backlink-node-stats": "Inbound {{inbound}} · Outbound {{outbound}} · Depth {{depth}}",
+  "backlink-untitled": "Untitled"
 }
